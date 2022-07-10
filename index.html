@@ -1,14 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
     <title>Impossible Bug Game</title>
-</head>
-<body>
-    <h1>Project Starter</h1>
+  </head>
+  <body>
+    <div class="screen">
+      <h1>Fang insektet!</h1>
+      <button class="btn" id="start-btn">Start spillet!</button>
+    </div>
+
+    <div class="screen">
+      <h1>Hvilket insekt er din "favoritt?"</h1>
+      <ul class="insects-list">
+        <li>
+          <button class="choose-insect-btn">
+            <p>Flue</p>
+            <img
+              src="http://pngimg.com/uploads/fly/fly_PNG3946.png"
+              alt="flue"
+            />
+          </button>
+        </li>
+        <li>
+          <button class="choose-insect-btn">
+            <p>Mygg</p>
+            <img
+              src="http://pngimg.com/uploads/mosquito/mosquito_PNG18175.png"
+              alt="mygg"
+            />
+          </button>
+        </li>
+        <li>
+          <button class="choose-insect-btn">
+            <p>Edderkopp</p>
+            <img
+              src="http://pngimg.com/uploads/spider/spider_PNG12.png"
+              alt="flue"
+            />
+          </button>
+        </li>
+        <li>
+          <button class="choose-insect-btn">
+            <p>Kakkerlakk</p>
+            <img
+              src="http://pngimg.com/uploads/roach/roach_PNG12163.png"
+              alt="kakkerlakk"
+            />
+          </button>
+        </li>
+      </ul>
+    </div>
+
+    <div class="screen game-container">
+      <h3 id="time">Tid: 00:00</h3>
+      <h3 id="score">Score</h3>
+      <h5 id="message">
+        Er du irritert enda? <br />
+        Du spiller et umulig spill!!
+      </h5>
+    </div>
     <script src="script.js"></script>
-</body>
+  </body>
 </html>
